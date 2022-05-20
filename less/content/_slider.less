@@ -1,0 +1,91 @@
+.slider{
+    .bg{
+        position:absolute;
+        top: 1861px;
+        display:block;
+        width: 100%;
+    }
+    &-content{
+        position:relative;
+        align-items: center;
+        top: 50px;
+        .title{
+            text-align: center;
+            padding-top: 80px;
+            left:50%;
+            .line{
+                padding-left:546px;
+            }
+        }
+        img{
+            display:block;
+            width: 100%;
+            height: 100%;
+        }
+        .slider-items{
+            display:flex;
+            font-style: 16px;
+            padding-top: 35px;
+            .slider-item{
+                .col(33.3333%);
+                img{
+                    display:block;
+                    width: 100%;
+                    height: 100%;
+                }
+                &-top{
+                    position: relative;
+                    .date{
+                        position: absolute;
+                        top: 22px;
+                        left:20px;
+                        width: 60px;
+                        height: 60px;
+                        background-color: #a1d1dd;
+                        &-info{
+                            margin: 5px 5px 5px 5px;
+                            height: 49px;
+                            border: 1px solid @main-color;
+                            font-family: 'Montserrat-Bold';
+                            color:@main-color;
+                            text-align: center;
+                            .month{
+                                padding-top: 6px;
+                            }
+                        }
+                    }
+                }
+                &-bottom{
+                    background-color: @main-color;
+                    .describe{
+                        padding-top: 17px;
+                        padding-left: 20px;
+                        border-bottom: 1px solid #ededed;
+                        a{
+                            font-weight: 400;
+                            line-height: 20px
+                        }
+                        p {
+                            font-family: 'Open-sans';
+                        }
+                    }
+                    .feedback{
+                        display:flex;
+                        padding-top: 18px;
+                        padding-left: 14px;
+                        height: 40px;
+                        .comment{
+                            padding-right: 35px;
+                        }
+                        .like{
+                            padding-right: 35px;
+                        }
+                        span{
+                            padding-left: 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
