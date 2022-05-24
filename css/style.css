@@ -74,7 +74,6 @@
 .banner-right-content .banner-right-item {
   position: relative;
   cursor: pointer;
-  overflow: hidden;
   padding: 15px 0;
 }
 .banner-right .banner-content {
@@ -293,7 +292,6 @@ a {
 img {
   display: block;
   width: 100%;
-  height: 100%;
 }
 ul {
   margin: 0;
@@ -457,8 +455,8 @@ button {
   width: 360px;
 }
 .footer-top .center .nav-item {
-  padding-top: 25px;
   display: flex;
+  padding-top: 25px;
 }
 .footer-top .center .nav-item a:hover {
   color: #fff;
@@ -527,8 +525,7 @@ button {
     font-style: 10px;
   }
   .banner-left .banner-info {
-    padding-left: 270px;
-    bottom: 110px;
+    bottom: 25%;
   }
   .banner-left .banner-info .title {
     font-size: 26px;
@@ -555,10 +552,25 @@ button {
   }
   .banner-right-content {
     display: flex;
+    flex-direction: row;
     margin: 0 -15px;
   }
   .banner-right-content .banner-right-item {
+    width: 50%;
     padding: 0 15px;
+  }
+  .banner-right-content .banner-right-item-inner {
+    overflow: hidden;
+    height: 196.66px;
+  }
+  .banner-right-content .banner-right-item-inner .title {
+    font-size: 14px;
+  }
+  .banner-right-content .banner-right-item-inner span {
+    font-size: 16px;
+  }
+  .banner-right-content .banner-right-item-inner .content-bottom {
+    top: 20%;
   }
   .list-bottom .list-item {
     width: 50%;
@@ -571,7 +583,10 @@ button {
   }
   .footer-top .left {
     width: 100%;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
+  }
+  .footer-top .left .contact {
+    padding-top: 20px;
   }
   .footer-top .center {
     width: 50%;
@@ -588,34 +603,33 @@ button {
   .header-inner .web-info .title {
     display: none;
   }
-  .banner-left .banner-inner .banner-info {
-    padding-left: 260px;
-  }
   .banner-left .banner-inner .banner-info .button {
     padding-left: 100px;
+  }
+  .banner-right-content .banner-right-item-inner {
+    height: 143.33px;
   }
   .slider .title .mr {
     margin-left: 45.5%;
   }
-  .footer-top-inner {
-    font-size: 12px;
+  .footer-top .left {
+    margin-bottom: 50px;
   }
-  .footer-top-inner .footer-item-left {
-    width: 150px;
-    padding-right: 30px;
+  .footer-top .left .contact {
+    padding-top: 20px;
   }
-  .footer-top-inner .footer-item-center {
-    width: 160px;
+  .footer-top .center {
+    width: 50%;
+    padding: 0 15px;
   }
-  .footer-top-inner .footer-item-center .nav-item-right {
-    padding-left: 17px;
+  .footer-top .center .title {
+    width: 260px;
   }
-  .footer-top-inner .footer-item-right {
-    width: 160px;
-    padding-left: 30px;
+  .footer-top .center .nav-item-right {
+    padding-left: 50px;
   }
-  .footer-top-inner .footer-item-right .contact {
-    font-size: 12px;
+  .footer-top .right {
+    width: 50%;
   }
   .footer-bottom-inner {
     font-size: 12px;
