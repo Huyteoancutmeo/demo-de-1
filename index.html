@@ -15,7 +15,6 @@
     <!--Link js-->
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/slick.min.js"></script>
-    <script src="js/script.js"></script>
 </head>
 <body>
     <div class="wrapper">
@@ -68,6 +67,12 @@
                         </div>
                     </div>
                     <div class="menu-bar-inner-right">
+                        <div class="control-item menu ">
+                            <i class="pe-7s-menu pe-2x"></i>
+                        </div>
+                        <div class="control-item search">
+                            <i class="pe-7s-search pe-2x"></i>
+                        </div>
                         <div class="control-item like">
                             <i class="pe-7s-like pe-2x"></i>
                         </div>
@@ -83,9 +88,9 @@
         <!--End Header-->
         <!--Main-content-->
         <div class="main-content">
-            <div class="container">
-                <!--Banner-->
-                <div class="banner">
+            <!--Banner-->
+            <div class="banner">
+                <div class="container">
                     <div class="row">
                         <div class="banner-left">
                             <div class="banner-inner">
@@ -99,300 +104,361 @@
                             </div>
                         </div>
                         <div class="banner-right">
-                            <div class="banner-col">
+                            <div class="banner-right-content">
                                 <div class="banner-right-item">
-                                    <div class="banner-right-item-inner">
-                                        <img src="img/banner-2.jpg" alt="">
-                                        <div class="banner-content content-top">
-                                            <div class="title">Small Think</div>
-                                            <span style="font-family: 'Montserrat-Bold';">Make Different</span>
-                                        </div>
+                                    <img src="img/banner-2.jpg" alt="">
+                                    <div class="banner-content content-top fix-position">
+                                        <div class="title">Small Thing</div>
+                                        <span style="font-family: 'Montserrat-Bold';">Make Different</span>
                                     </div>
                                 </div>
                                 <div class="banner-right-item">
-                                    <div class="banner-right-item-inner">
-                                        <img src="img/banner-3.jpg" alt="">
-                                        <div class="banner-content content-bottom">
-                                            <div class="title">Folio</div>
-                                            <span style="font-family: 'Montserrat-Bold'">BACKPACK</span>
-                                            <div style="padding-top: 14px;">
-                                                <button >Shop Now</button>
-                                            </div>
+                                    <img src="img/banner-3.jpg" alt="">
+                                    <div class="banner-content content-bottom fix-position">
+                                        <div class="title">Folio</div>
+                                        <span style="font-family: 'Montserrat-Bold'">BACKPACK</span>
+                                        <div style="padding-top: 14px;">
+                                            <button >Shop Now</button>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div>   
                         </div>
                     </div>
                 </div>
                 <!--End Banner-->
                 <!--Listing-->
-                <div class="list">
+            </div>
+            <div class="list">
+                <div class="container">
                     <div class="list-header">
                         <div class="title">Franco</div>
                         <div class="featured-item " >Featured Items</div>
                         <div class="line"></div>
                     </div>
-                    <div class="row">
-                        <div class="list-item">
-                            <div class="list-item-inner">
-                                <div class="inner-top">
-                                    <img src="img/list-1.jpg" alt="">
-                                    <div class="button"><button>Add To Cart</button></div>
-                                </div>
-                                <div class="inner-bottom">
-                                    <div class="title">Watch of Doctor Strange</div>
-                                    <div class="vote">
-                                        <i class="fa-regular fa-star"></i>
-                                        <i class="fa-regular fa-star"></i>
-                                        <i class="fa-regular fa-star"></i>
-                                        <i class="fa-regular fa-star"></i>
-                                        <i class="fa-regular fa-star"></i>
+                    <div class="list-bottom">
+                        <div class="row">
+                            <div class="list-item">
+                                <div class="list-item-inner">
+                                    <div class="inner-top">
+                                        <img src="img/list-1.jpg" alt="">
+                                        <div class="button"><button>Add To Cart</button></div>
                                     </div>
-                                    <div class="cost">
-                                        <div class="cost-root">$99.00</div>
-                                        <div class="cost-new">$84.00</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="list-item">
-                            <div class="list-item-inner">
-                                <div class="inner-top">
-                                    <img src="img/list-2.jpg" alt="">
-                                    <div class="button"><button>Add to cart</button></div>
-                                </div>
-                                <div class="inner-bottom">
-                                    <div class="title">Bag of Luis Vution</div>
-                                    <div class="vote">
-                                        <i class="fa-regular fa-star"></i>
-                                        <i class="fa-regular fa-star"></i>
-                                        <i class="fa-regular fa-star"></i>
-                                        <i class="fa-regular fa-star"></i>
-                                        <i class="fa-regular fa-star"></i>
-                                    </div>
-                                    <div class="cost">
-                                        <div class="cost-root">$99.00</div>
-                                        <div class="cost-new">$84.00</div>
+                                    <div class="inner-bottom">
+                                        <div class="title">Watch of Doctor Strange</div>
+                                        <div class="vote">
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </div>
+                                        <div class="cost">
+                                            <div class="cost-root">$99.00</div>
+                                            <div class="cost-new">$84.00</div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="list-item">
-                            <div class="list-item-inner">
-                                <div class="inner-top">
-                                    <img src="img/list-3.jpg" alt="">
-                                    <div class="button"><button>Add to cart</button></div>
-                                </div>
-                                <div class="inner-bottom">
-                                    <div class="title">Bag of Channel</div>
-                                    <div class="vote">
-                                        <i class="fa-regular fa-star"></i>
-                                        <i class="fa-regular fa-star"></i>
-                                        <i class="fa-regular fa-star"></i>
-                                        <i class="fa-regular fa-star"></i>
-                                        <i class="fa-regular fa-star"></i>
+                            <div class="list-item">
+                                <div class="list-item-inner">
+                                    <div class="inner-top">
+                                        <img src="img/list-2.jpg" alt="">
+                                        <div class="button"><button>Add to cart</button></div>
                                     </div>
-                                    <div class="cost">
-                                        <div class="cost-root">$99.00</div>
-                                        <div class="cost-new">$84.00</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="list-item">
-                            <div class="list-item-inner">
-                                <div class="inner-top">
-                                    <img src="img/list-4.jpg" alt="">
-                                    <div class="button"><button>Add to cart</button></div>
-                                </div>
-                                <div class="inner-bottom">
-                                    <div class="title">Clother of Channel</div>
-                                    <div class="vote">
-                                        <i class="fa-regular fa-star"></i>
-                                        <i class="fa-regular fa-star"></i>
-                                        <i class="fa-regular fa-star"></i>
-                                        <i class="fa-regular fa-star"></i>
-                                        <i class="fa-regular fa-star"></i>
-                                    </div>
-                                    <div class="cost">
-                                        <div class="cost-root">$99.00</div>
-                                        <div class="cost-new">$84.00</div>
+                                    <div class="inner-bottom">
+                                        <div class="title">Bag of Luis Vution</div>
+                                        <div class="vote">
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                        </div>
+                                        <div class="cost">
+                                            <div class="cost-root">$99.00</div>
+                                            <div class="cost-new">$84.00</div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="list-item">
-                            <div class="list-item-inner">
-                                <div class="inner-top">
-                                    <img src="img/list-5.jpg" alt="">
-                                    <div class="button"><button>Add to cart</button></div>
-                                </div>
-                                <div class="inner-bottom">
-                                    <div class="title">Bag of Channel</div>
-                                    <div class="vote">
-                                        <i class="fa-regular fa-star"></i>
-                                        <i class="fa-regular fa-star"></i>
-                                        <i class="fa-regular fa-star"></i>
-                                        <i class="fa-regular fa-star"></i>
-                                        <i class="fa-regular fa-star"></i>
+                            <div class="list-item">
+                                <div class="list-item-inner">
+                                    <div class="inner-top">
+                                        <img src="img/list-3.jpg" alt="">
+                                        <div class="button"><button>Add to cart</button></div>
                                     </div>
-                                    <div class="cost">
-                                        <div class="cost-root">$99.00</div>
-                                        <div class="cost-new">$84.00</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="list-item">
-                            <div class="list-item-inner">
-                                <div class="inner-top">
-                                    <img src="img/list-6.jpg" alt="">
-                                    <div class="button"><button>Add to cart</button></div>
-                                </div>
-                                <div class="inner-bottom">
-                                    <div class="title">Dep lao from Viet Nam</div>
-                                    <div class="vote">
-                                        <i class="fa-regular fa-star"></i>
-                                        <i class="fa-regular fa-star"></i>
-                                        <i class="fa-regular fa-star"></i>
-                                        <i class="fa-regular fa-star"></i>
-                                        <i class="fa-regular fa-star"></i>
-                                    </div>
-                                    <div class="cost">
-                                        <div class="cost-root">$99.00</div>
-                                        <div class="cost-new">$84.00</div>
+                                    <div class="inner-bottom">
+                                        <div class="title">Bag of Channel</div>
+                                        <div class="vote">
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                        </div>
+                                        <div class="cost">
+                                            <div class="cost-root">$99.00</div>
+                                            <div class="cost-new">$84.00</div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="list-item">
-                            <div class="list-item-inner">
-                                <div class="inner-top">
-                                    <img src="img/list-7.jpg" alt="">
-                                    <div class="button"><button>Add to cart</button></div>
-                                </div>
-                                <div class="inner-bottom">
-                                    <div class="title">Bag of Luis Vution</div>
-                                    <div class="vote">
-                                        <i class="fa-regular fa-star"></i>
-                                        <i class="fa-regular fa-star"></i>
-                                        <i class="fa-regular fa-star"></i>
-                                        <i class="fa-regular fa-star"></i>
-                                        <i class="fa-regular fa-star"></i>
+                            <div class="list-item">
+                                <div class="list-item-inner">
+                                    <div class="inner-top">
+                                        <img src="img/list-4.jpg" alt="">
+                                        <div class="button"><button>Add to cart</button></div>
                                     </div>
-                                    <div class="cost">
-                                        <div class="cost-root">$99.00</div>
-                                        <div class="cost-new">$84.00</div>
+                                    <div class="inner-bottom">
+                                        <div class="title">Clother of Channel</div>
+                                        <div class="vote">
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                        </div>
+                                        <div class="cost">
+                                            <div class="cost-root">$99.00</div>
+                                            <div class="cost-new">$84.00</div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="list-item">
-                            <div class="list-item-inner">
-                                <div class="inner-top">
-                                    <img src="img/list-8.jpg" alt="">
-                                    <div class="button"><button>Add to cart</button></div>
-                                </div>
-                                <div class="inner-bottom">
-                                    <div class="title">Bag of Luis Vution</div>
-                                    <div class="vote">
-                                        <i class="fa-regular fa-star"></i>
-                                        <i class="fa-regular fa-star"></i>
-                                        <i class="fa-regular fa-star"></i>
-                                        <i class="fa-regular fa-star"></i>
-                                        <i class="fa-regular fa-star"></i>
+                            <div class="list-item">
+                                <div class="list-item-inner">
+                                    <div class="inner-top">
+                                        <img src="img/list-5.jpg" alt="">
+                                        <div class="button"><button>Add to cart</button></div>
                                     </div>
-                                    <div class="cost">
-                                        <div class="cost-root">$99.00</div>
-                                        <div class="cost-new">$84.00</div>
+                                    <div class="inner-bottom">
+                                        <div class="title">Bag of Channel</div>
+                                        <div class="vote">
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                        </div>
+                                        <div class="cost">
+                                            <div class="cost-root">$99.00</div>
+                                            <div class="cost-new">$84.00</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="list-item">
+                                <div class="list-item-inner">
+                                    <div class="inner-top">
+                                        <img src="img/list-6.jpg" alt="">
+                                        <div class="button"><button>Add to cart</button></div>
+                                    </div>
+                                    <div class="inner-bottom">
+                                        <div class="title">Dep lao from Viet Nam</div>
+                                        <div class="vote">
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                        </div>
+                                        <div class="cost">
+                                            <div class="cost-root">$99.00</div>
+                                            <div class="cost-new">$84.00</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="list-item">
+                                <div class="list-item-inner">
+                                    <div class="inner-top">
+                                        <img src="img/list-7.jpg" alt="">
+                                        <div class="button"><button>Add to cart</button></div>
+                                    </div>
+                                    <div class="inner-bottom">
+                                        <div class="title">Bag of Luis Vution</div>
+                                        <div class="vote">
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                        </div>
+                                        <div class="cost">
+                                            <div class="cost-root">$99.00</div>
+                                            <div class="cost-new">$84.00</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="list-item">
+                                <div class="list-item-inner">
+                                    <div class="inner-top">
+                                        <img src="img/list-8.jpg" alt="">
+                                        <div class="button"><button>Add to cart</button></div>
+                                    </div>
+                                    <div class="inner-bottom">
+                                        <div class="title">Bag of Luis Vution</div>
+                                        <div class="vote">
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                        </div>
+                                        <div class="cost">
+                                            <div class="cost-root">$99.00</div>
+                                            <div class="cost-new">$84.00</div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!--End Listing-->
             </div>
+            <!--End Listing-->
             <!--Slider-->
             <div class="slider">
-                <div class="bg"><img src="img/bg-silder.jpg" alt=""></div>
+                <div class="title">
+                    <div style="color: #8262b5; font-size: 12px;font-weight: 700;letter-spacing: 2px;text-transform: uppercase;">L a t e s t</div>
+                    <div style="padding-top: 10px; padding-bottom: 23px; font-size: 24px;text-transform: uppercase;letter-spacing: 2px;font-family: 'Montserrat-Bold'">News   &   Events</div>
+                    <div class="mr" style="height: 1px;width: 50px;background-color:#8262b5;"> </div>
+                </div>
                 <div class="slider-content container">
-                    <div class="title">
-                        <div style="color: #8262b5; font-size: 12px;font-weight: 700;letter-spacing: 2px;text-transform: uppercase;">L a t e s t</div>
-                        <div style="padding-top: 10px; padding-bottom: 23px; font-size: 24px;text-transform: uppercase;letter-spacing: 2px;font-family: 'Montserrat-Bold'">News   &   Events</div>
-                        <div class="line"><div style="height: 1px;width: 50px;background-color:#8262b5;"></div></div>
-                    </div>
-                    <div class="row">
-                        <div class="slider-items">
-                            <div class="slider-item">
-                                <div class="slider-item-top">
-                                    <img src="img/slider-item-1.jpg" alt="">
-                                    <div class="date">
-                                        <div class="date-info">
-                                            <div class="month">Jan</div>
-                                            <div class="day">23</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="slider-item-bottom">
-                                    <div class="describe">
-                                        <div class=""><a href="#">In commodo dolor vitae</a></div>
-                                        <p>Aliquam tempor sagittis neque, vel aliquam risus consectetur vel. Aenean hendrerit, elit a lacinia suscipit, orci mauris.</p>
-                                    </div>
-                                    <div class="feedback">
-                                        <div class="comment"><i class="pe-7s-chat"></i><span>12</span></div>
-                                        <div class="like"><i class= "pe-7s-like"></i><span>6</span></div>
+                    <div class="slider-items">
+                        <div class="slider-item">
+                            <div class="slider-item-top">
+                                <img src="img/slider-item-1.jpg" alt="">
+                                <div class="date">
+                                    <div class="date-info">
+                                        <div class="month">Jan</div>
+                                        <div class="day">23</div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="slider-item">
-                                <div class="slider-item-top">
-                                    <img src="img/slider-item-2.jpg" alt="">
-                                    <div class="date">
-                                        <div class="date-info">
-                                            <div class="month">Jan</div>
-                                            <div class="day">23</div>
-                                        </div>
-                                    </div>
+                            <div class="slider-item-bottom">
+                                <div class="describe">
+                                    <div class=""><a href="#">In commodo dolor vitae</a></div>
+                                    <p>Aliquam tempor sagittis neque, vel aliquam risus consectetur vel. Aenean hendrerit, elit a lacinia suscipit, orci mauris.</p>
                                 </div>
-                                <div class="slider-item-bottom">
-                                    <div class="describe">
-                                        <div class=""><a href="#">In commodo dolor vitae</a></div>
-                                        <p>Aliquam tempor sagittis neque, vel aliquam risus consectetur vel. Aenean hendrerit, elit a lacinia suscipit, orci mauris.</p>
-                                    </div>
-                                    <div class="feedback">
-                                        <div class="comment"><i class="pe-7s-chat"></i><span>12</span></div>
-                                        <div class="like"><i class= "pe-7s-like"></i><span>6</span></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="slider-item">
-                                <div class="slider-item-top">
-                                    <img src="img/slider-item-3.jpg" alt="">
-                                    <div class="date">
-                                        <div class="date-info">
-                                            <div class="month">Jan</div>
-                                            <div class="day">23</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="slider-item-bottom">
-                                    <div class="describe">
-                                        <div class=""><a href="#">In commodo dolor vitae</a></div>
-                                        <p>Aliquam tempor sagittis neque, vel aliquam risus consectetur vel. Aenean hendrerit, elit a lacinia suscipit, orci mauris.</p>
-                                    </div>
-                                    <div class="feedback">
-                                        <div class="comment"><i class="pe-7s-chat"></i><span>12</span></div>
-                                        <div class="like"><i class= "pe-7s-like"></i><span>6</span></div>
-                                    </div>
+                                <div class="feedback">
+                                    <div class="comment"><i class="fa-regular fa-comment"></i><span>12</span></div>
+                                    <div class="like"><i class= "pe-7s-like"></i><span>6</span></div>
                                 </div>
                             </div>
                         </div>
+                        <div class="slider-item">
+                            <div class="slider-item-top">
+                                <img src="img/slider-item-2.jpg" alt="">
+                                <div class="date">
+                                    <div class="date-info">
+                                        <div class="month">Jan</div>
+                                        <div class="day">23</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slider-item-bottom">
+                                <div class="describe">
+                                    <div class=""><a href="#">In commodo dolor vitae</a></div>
+                                    <p>Aliquam tempor sagittis neque, vel aliquam risus consectetur vel. Aenean hendrerit, elit a lacinia suscipit, orci mauris.</p>
+                                </div>
+                                <div class="feedback">
+                                    <div class="comment"><i class="fa-regular fa-comment"></i><span>12</span></div>
+                                    <div class="like"><i class= "pe-7s-like"></i><span>6</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider-item">
+                            <div class="slider-item-top">
+                                <img src="img/slider-item-3.jpg" alt="">
+                                <div class="date">
+                                    <div class="date-info">
+                                        <div class="month">Jan</div>
+                                        <div class="day">23</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slider-item-bottom">
+                                <div class="describe">
+                                    <div class=""><a href="#">In commodo dolor vitae</a></div>
+                                    <p>Aliquam tempor sagittis neque, vel aliquam risus consectetur vel. Aenean hendrerit, elit a lacinia suscipit, orci mauris.</p>
+                                </div>
+                                <div class="feedback">
+                                    <div class="comment"><i class="fa-regular fa-comment"></i><span>12</span></div>
+                                    <div class="like"><i class= "pe-7s-like"></i><span>6</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider-item">
+                            <div class="slider-item-top">
+                                <img src="img/slider-item-1.jpg" alt="">
+                                <div class="date">
+                                    <div class="date-info">
+                                        <div class="month">Jan</div>
+                                        <div class="day">23</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slider-item-bottom">
+                                <div class="describe">
+                                    <div class=""><a href="#">In commodo dolor vitae</a></div>
+                                    <p>Aliquam tempor sagittis neque, vel aliquam risus consectetur vel. Aenean hendrerit, elit a lacinia suscipit, orci mauris.</p>
+                                </div>
+                                <div class="feedback">
+                                    <div class="comment"><i class="fa-regular fa-comment"></i><span>12</span></div>
+                                    <div class="like"><i class= "pe-7s-like"></i><span>6</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider-item">
+                            <div class="slider-item-top">
+                                <img src="img/slider-item-2.jpg" alt="">
+                                <div class="date">
+                                    <div class="date-info">
+                                        <div class="month">Jan</div>
+                                        <div class="day">23</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slider-item-bottom">
+                                <div class="describe">
+                                    <div class=""><a href="#">In commodo dolor vitae</a></div>
+                                    <p>Aliquam tempor sagittis neque, vel aliquam risus consectetur vel. Aenean hendrerit, elit a lacinia suscipit, orci mauris.</p>
+                                </div>
+                                <div class="feedback">
+                                    <div class="comment"><i class="fa-regular fa-comment"></i><span>12</span></div>
+                                    <div class="like"><i class= "pe-7s-like"></i><span>6</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider-item">
+                            <div class="slider-item-top">
+                                <img src="img/slider-item-3.jpg" alt="">
+                                <div class="date">
+                                    <div class="date-info">
+                                        <div class="month">Jan</div>
+                                        <div class="day">23</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slider-item-bottom">
+                                <div class="describe">
+                                    <div class=""><a href="#">In commodo dolor vitae</a></div>
+                                    <p>Aliquam tempor sagittis neque, vel aliquam risus consectetur vel. Aenean hendrerit, elit a lacinia suscipit, orci mauris.</p>
+                                </div>
+                                <div class="feedback">
+                                    <div class="comment"><i class="fa-regular fa-comment"></i><span>12</span></div>
+                                    <div class="like"><i class= "pe-7s-like"></i><span>6</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        
                     </div>
                 </div>
             </div>
-            <!--End sider-->
+            <!--End Sider-->
         </div>
         <!--End Main-content-->
         <!--Footer-->
@@ -400,60 +466,59 @@
             <!--Footer Top-->
             <div class="footer-top">
                 <div class="container">
-                    <div class="footer-top-inner">
-                        <div class="footer-item-left">
-                            <div class="title">About Franco</div>
-                            <p>Aliquam tempor sagittis neque, vel aliquam risus consectetur vel. Aenean hendrerit, elit a lacinia suscipit, orci mauris vulputate mi, eu interdum nunc diam at ipsum. </p>
-                            <div class="contact">
-                                <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                                <a href="#"><i class="fa-brands fa-linkedin-in"></i></i></a>
-                                <a href="#"><i class="fa-brands fa-behance"></i></i></a>
-                                <a href="#"><i class="fa-solid fa-basketball"></i></a>
-                            </div>
-                        </div>
-                        <div class="footer-item-center">
-                            <div class="title">Navigation</div>
-                            <p></p>
-                            <div class="nav-item">
-                                <div class="nav-item-left">
-                                    <div class="pb-11"><a href="">Home</a></div>
-                                    <div class="pb-11"><a href="">About Us</a></div>
-                                    <div class="pb-11"><a href="">Our Blog</a></div>
-                                    <div class="pb-11"><a href="">Women</a></div>
-                                    <div class="pb-11"><a href="">Man</a></div>
-                                    <div class="pb-11"><a href="">Contact Us</a></div>
-                                </div>
-                                <div class="nav-item-right">
-                                    <div class="pb-11"><a href="">FAQS</a></div>
-                                    <div class="pb-11"><a href="">Featured Brands</a></div>
-                                    <div class="pb-11"><a href="">Gift Vouchers</a></div>
-                                    <div class="pb-11"><a href="">Affiliates</a></div>
-                                    <div class="pb-11"><a href="">Specials Gift</a></div>
-                                    <div class="pb-11"><a href="">Terms & Conditions</a></div>
+                    <div class="row">
+                            <div class="footer-items left">
+                                <div class="title">About Franco</div>
+                                <p>Aliquam tempor sagittis neque, vel aliquam risus consectetur vel. Aenean hendrerit, elit a lacinia suscipit, orci mauris vulputate mi, eu interdum nunc diam at ipsum. </p>
+                                <div class="contact">
+                                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></i></a>
+                                    <a href="#"><i class="fa-brands fa-behance"></i></i></a>
+                                    <a href="#"><i class="fa-solid fa-basketball"></i></a>
                                 </div>
                             </div>
-                        </div>
-                        <div class="footer-item-right">
-                            <div class="title">Shop Location</div>
-                            <p></p>
-                            <div class="contact">
-                                <div class="address" style="display: flex;">
-                                    <i class="fa-regular fa-map"></i>
-                                    <span>
-                                        <div>500 Hennessy Road,</div> 
-                                        <div>Causeway Bay, HongKong</div>
-                                    </span>
-                                </div>
-                                <div class="phone">
-                                    <i class="fa-solid fa-phone"></i>
-                                    <span>  +1 23456789</span>
-                                </div>
-                                <div class="email">
-                                    <i class="fa-regular fa-envelope"></i>
-                                    <span>  contact@gmail.com</span>
+                            <div class="footer-items center">
+                                <div class="title">Navigation</div>
+                                <div class="nav-item">
+                                    <div class="nav-item-left">
+                                        <div class="pb-11"><a href="">Home</a></div>
+                                        <div class="pb-11"><a href="">About Us</a></div>
+                                        <div class="pb-11"><a href="">Our Blog</a></div>
+                                        <div class="pb-11"><a href="">Women</a></div>
+                                        <div class="pb-11"><a href="">Man</a></div>
+                                        <div class="pb-11"><a href="">Contact Us</a></div>
+                                    </div>
+                                    <div class="nav-item-right">
+                                        <div class="pb-11"><a href="">FAQS</a></div>
+                                        <div class="pb-11"><a href="">Featured Brands</a></div>
+                                        <div class="pb-11"><a href="">Gift Vouchers</a></div>
+                                        <div class="pb-11"><a href="">Affiliates</a></div>
+                                        <div class="pb-11"><a href="">Specials Gift</a></div>
+                                        <div class="pb-11"><a href="">Terms & Conditions</a></div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                            <div class="footer-items right">
+                                <div class="title">Shop Location</div>
+                                <p></p>
+                                <div class="contact">
+                                    <div class="address" style="display: flex;">
+                                        <i class="fa-regular fa-map"></i>
+                                        <div class="description">
+                                            <a href="#">500 Hennessy Road, Causeway Bay, HongKong</a>
+                                        </div>
+                                    </div>
+                                    <div class="phone">
+                                        <i class="fa-solid fa-phone"></i>
+                                        <span>+1 23456789</span>
+                                    </div>
+                                    <div class="email">
+                                        <i class="fa-regular fa-envelope"></i>
+                                        <span>contact@gmail.com</span>
+                                    </div>
+                                </div>
+                            </div>
+                        
                     </div>
                 </div>
             </div>
@@ -480,5 +545,39 @@
         </div>
         <!--End Footer-->
     </div>
+    <script>
+        $('.slider-items').slick({
+            dots: true,
+            infinite: true,
+            slidesToShow: 3,
+            slidesToScroll: 2,
+            arrows: false,
+            responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                infinite: true,
+                dots: true
+              }
+            },
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2
+              }
+            },
+            {
+              breakpoint: 576,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+              }
+            }
+            ]
+        });
+    </script>
 </body>
 </html>

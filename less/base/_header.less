@@ -50,6 +50,10 @@
                             text-transform: uppercase;
                             font-size: 14px;
                         }
+                        a:hover{
+                            text-decoration: none;
+                            color: @btn-color;
+                        }
                     }
                 }
                 .search-button{
@@ -64,8 +68,14 @@
         &-right{
             display:flex;
             padding-top: 25px;
-            .like{
-                padding-right: 22px;
+            .menu{
+                display:none;
+            }
+            .search{
+                display:none;
+            }
+            .control-item{
+                padding-left: 22px;
             }
         }
     }

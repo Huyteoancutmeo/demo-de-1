@@ -1,62 +1,79 @@
 .footer{
     background-color: @bg-color;
     color: #888888;
-    margin-top: 145px;
+    font-family: "Open Sans";
+    a{
+        color:#828282;
+        margin-bottom: 20px;
+        letter-spacing: 0.3px;
+        :hover{
+            color:@main-color;
+        }
+    }
     &-top{
         border-bottom: 1px solid #828282;
-        height: 346px;
-        &-inner{
-            display: flex;
-            padding-top: 58px;
-            font-size:14px;
-            font-family: "Open Sans";
+        padding-top: 58px;
+        padding-bottom: 34px;
+        font-size:14px;
             .title{
                 border-bottom: 1px solid #828282;
                 color:#f7f7f7;
                 height:47px;
+                font-family: 'Montserrat-Regular';
                 letter-spacing: 1px;
                 font-weight: 400;
-                margin-bottom: 26px;
                 font-size: 16px;
             }
-            .footer-item{
-                &-left{
-                    width: 268px;
-                    padding-right: 127px;
+            .footer-items{
+                padding: 0 15px;
+                box-sizing: border-box;
+            }
+                .left{
+                    width: calc(100% / 12 * 3);
+                    p{
+                        line-height: 22px;
+                        letter-spacing: 0.3px;
+                        padding-top: 8px;
+                    }
+                    .contact{
+                        padding-top: 30px;
+                        a{
+                            padding-right: 30px;
+                        }
+                    }
                 }
-                &-center{
-                    width: 360px;
+                .center{
+                    width: calc(100% / 12 * 6);
+                    padding-left: 9.6%;
+                    .title{
+                        width: 360px;
+                    }
                     .nav-item{
+                        padding-top: 25px;
+                        a:hover{
+                            color: @main-color;
+                        }
                         .pb-11{
                             padding-bottom: 11px;
                         }
                         display: flex;
-                        a{
-                            color:#828282;
-                            margin-bottom: 20px;
-                            :hover{
-                                color:@main-color;
-                            }
-                        }
                         &-right{
                             padding-left: 123px;
                         }
                     }
                 }
-                &-right{
-                    padding-left: 127px;
-                    width: 263px;
+                .right{
+                    width: calc(100% / 12 * 3);
                     .contact{
+                        padding-top: 5px;
                         width: 233px;
-                        font-size: 14px;
-                        line-height: 34px;
+                        line-height: 33px;
                         i{
-                            padding-right: 12px;
+                            padding-right: 14px;
+                            padding-top: 10px;
                         }
                     }
                 }
-            }
-        }
     }
     &-bottom{
         height: 70px;
@@ -65,7 +82,8 @@
             font-size: 14px;
             line-height: 25px;
             justify-content: space-between;
-            padding-top: 20px;
+            letter-spacing: 0.2px;
+            padding-top: 22px;
             .footer-bottom-item-left{
                 span{
                     i{

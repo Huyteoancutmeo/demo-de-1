@@ -24,10 +24,8 @@
         }
         .banner-info{
             position:absolute;
-            box-sizing: border-box;
-            padding-left: 338px;
-            bottom: 167px;
-            width: 100%;
+            right: 14%;
+            bottom: 28%;
             .title{
                 font-family: 'Pacifico';
                 font-weight: 400;
@@ -44,36 +42,31 @@
         .col(33.3333%);
         text-transform: uppercase;
         .title{
-            font-size: 18px;
+            font-size: 16px;
+            letter-spacing: 3px;
         }
         span{
             font-size: 20px;
         }
-        &-item{
-            position:relative;
-            overflow: hidden;
-            padding: 15px 0;
-            img{
-                display:block;
-                width: 100%;
-            }
-            &-inner{
+        &-content{
+            .banner-right-item{
+                position:relative;
                 cursor: pointer;
                 overflow: hidden;
-
+                padding: 15px 0;
             }
         }
         .banner-content{
             position:absolute;
         }
         .content-top{
-            padding-left: 58px;
-            bottom: 87px;
+            top:43%;
+            left: 57px;
         }
         .content-bottom{
             display:block;
-            padding-left: 40px;
-            bottom: 128px;
+            top:38%;
+            left:38px;
         }
     }
 }
@@ -103,57 +96,58 @@
             left: 50%;
         }
     }
-    &-item{
-        .col(25%);
-        padding: 0 15px;
-        img{
-            display:block;
-            width: 100%;
-            height: 100%;
-        }
-        .inner-top{
-            position: relative;
-            button{
-                position: absolute;
-                text-transform: uppercase;
-                bottom: 5px;
-                font-size: 12px;
-                left: 5px;
-                height: 40px;
-                width: 118px;
-                background-color: @main-color;
+    &-bottom{
+        .list-item{
+            .col(25%);
+            padding: 0 15px;
+            img{
+                display:block;
+                width: 100%;
+                height: 100%;
             }
-        }
-        .inner-bottom{
-            padding-bottom: 10px;
-            .title{
-                padding-top: 13px;
-                font-family: 'Montserrat-Bold';
-                font-size: 14px;
-                line-height: 26px;
-                font-weight: 400;
-            }
-            .vote{
-                padding-top: 2px;
-                color: #f8ba04;
-                i{
-                    font-size: 11px;
+            &-inner{
+                .inner-top{
+                    position: relative;
+                    button{
+                        position: absolute;
+                        text-transform: uppercase;
+                        bottom: 5px;
+                        font-size: 12px;
+                        left: 5px;
+                        height: 40px;
+                        width: 118px;
+                        background-color: @main-color;
+                    }
                 }
-            }
-            .cost{
-                padding-top: 7px;
-                display:flex;
-                &-root{
-                    color:#9999;
-                    text-decoration: line-through;
-                }
-                &-new{
-                    color: @btn-color;
-                    padding-left: 4px;
-                    font-family: 'Montserrat-Bold';
+                .inner-bottom{
+                    padding-bottom: 12px;
+                    .title{
+                        padding-top: 13px;
+                        font-size: 14px;
+                        line-height: 26px;
+                        font-weight: 400;
+                    }
+                    .vote{
+                        color: #f8ba04;
+                        i{
+                            font-size: 12px;
+                        }
+                    }
+                    .cost{
+                        padding-top: 7px;
+                        display:flex;
+                        font-family: 'Open-Sans';
+                        &-root{
+                            color:#9999;
+                            text-decoration: line-through;
+                        }
+                        &-new{
+                            color: @btn-color;
+                            padding-left: 4px;
+                    }
                 }
             }
         }
     }
-
+}
 }
