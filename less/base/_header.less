@@ -27,24 +27,27 @@
 }
 
 .menu-bar {
-    navbar{
+    navbar {
         padding: 20px 30px;
         border-bottom: 1px solid #ddd;
-        margin-bottom: 29px;
         box-sizing: border-box;
         flex-wrap: wrap;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        .logo{
+
+        .logo {
             width: 15%;
-            a{
+
+            a {
                 display: flex;
-                img{
+
+                img {
                     width: 200px;
                 }
             }
         }
+
         .navbar-center {
             display: flex;
             justify-content: center;
@@ -53,34 +56,50 @@
             font-weight: 700;
             text-transform: uppercase;
             font-size: 14px;
-            nav{
+
+            nav {
                 .navbar-menu {
                     display: flex;
-                    li{
+
+                    li {
                         list-style: none;
-                        margin-right: 55px;
-                        a{
+                        margin-right: 54px;
+
+                        a {
                             text-decoration: none;
                         }
-                        button{
+
+                        a:hover {
+                            color: @btn-color;
+                        }
+
+                        button {
                             border: none;
                             background: none;
+                            font-size: 14px;
                         }
+                    }
+
+                    li:last-child {
+                        margin-right: 0;
                     }
                 }
             }
         }
-        .navbar-right{
+
+        .navbar-right {
             display: flex;
             width: 15%;
             justify-content: flex-end;
-            .right-item{
-                i{
+
+            .right-item {
+                i {
                     font-size: 30px;
                     padding-left: 28px;
                     color: #000;
                 }
-                button{
+
+                button {
                     border: none;
                     background: none;
                 }

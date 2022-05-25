@@ -355,7 +355,6 @@ button {
 .menu-bar navbar {
   padding: 20px 30px;
   border-bottom: 1px solid #ddd;
-  margin-bottom: 29px;
   box-sizing: border-box;
   flex-wrap: wrap;
   display: flex;
@@ -385,14 +384,21 @@ button {
 }
 .menu-bar navbar .navbar-center nav .navbar-menu li {
   list-style: none;
-  margin-right: 55px;
+  margin-right: 54px;
 }
 .menu-bar navbar .navbar-center nav .navbar-menu li a {
   text-decoration: none;
 }
+.menu-bar navbar .navbar-center nav .navbar-menu li a:hover {
+  color: #8262b5;
+}
 .menu-bar navbar .navbar-center nav .navbar-menu li button {
   border: none;
   background: none;
+  font-size: 14px;
+}
+.menu-bar navbar .navbar-center nav .navbar-menu li:last-child {
+  margin-right: 0;
 }
 .menu-bar navbar .navbar-right {
   display: flex;
