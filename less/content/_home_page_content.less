@@ -1,11 +1,13 @@
-.banner{
-    span{
-        color:@bg-color;
+.banner {
+    span {
+        color: @bg-color;
     }
-    .title{
+
+    .title {
         color: #7a7a7a;
     }
-    button{
+
+    button {
         height: 40px;
         width: 108px;
         text-align: center;
@@ -13,101 +15,121 @@
         color: @main-color;
         font-weight: 400;
     }
-    &-left{
+
+    &-left {
         .col(66.6667%);
-        position:relative;
+        position: relative;
         padding-top: 15px;
-        img{
+
+        img {
             display: block;
             width: 100%;
             height: 100%;
         }
-        .banner-info{
-            position:absolute;
+
+        .banner-info {
+            position: absolute;
             right: 14%;
             bottom: 28%;
-            .title{
+
+            .title {
                 font-family: 'Pacifico';
                 font-weight: 400;
                 font-size: 30px;
                 color: @font-color;
             }
-            .button{
-                padding-left: 212px; 
+
+            .button {
+                padding-left: 212px;
                 padding-top: 8px;
             }
         }
     }
-    &-right{
+
+    &-right {
         .col(33.3333%);
         text-transform: uppercase;
-        .title{
+
+        .title {
             font-size: 16px;
             letter-spacing: 3px;
         }
-        span{
+
+        span {
             font-size: 20px;
         }
-        &-content{
-            .banner-right-item{
-                position:relative;
+
+        &-content {
+            .banner-right-item {
+                position: relative;
                 cursor: pointer;
                 padding: 15px 0;
             }
         }
-        .banner-content{
-            position:absolute;
+
+        .banner-content {
+            position: absolute;
         }
-        .content-top{
-            top:43%;
+
+        .content-top {
+            top: 43%;
             left: 57px;
         }
-        .content-bottom{
-            display:block;
-            top:38%;
-            left:38px;
+
+        .content-bottom {
+            display: block;
+            top: 38%;
+            left: 38px;
         }
     }
 }
-.list{
-    &-header{
+
+.list {
+    &-header {
         font-family: 'Montserrat-Bold';
-        text-transform:uppercase;
+        text-transform: uppercase;
         padding-top: 45px;
         height: 115px;
+
         .title {
             color: @btn-color;
             letter-spacing: 6px;
             font-weight: 700;
             font-size: 12px;
         }
-        .featured-item{
+
+        .featured-item {
             padding-top: 11px;
             padding-bottom: 24px;
             letter-spacing: 2px;
             font-size: 24px;
             font-weight: 700;
         }
-        .line{
+
+        .line {
             height: 1px;
             width: 50px;
-            background-color:@btn-color;
+            background-color: @btn-color;
             left: 50%;
         }
     }
-    &-bottom{
-        .list-item{
+
+    &-bottom {
+        .list-item {
             .col(25%);
             padding: 0 15px;
-            img{
-                display:block;
+
+            img {
+                display: block;
                 width: 100%;
                 height: 100%;
             }
-            &-inner{
-                .inner-top{
+
+            &-inner {
+                .inner-top {
                     position: relative;
-                    button{
+
+                    button {
                         position: absolute;
                         text-transform: uppercase;
                         bottom: 5px;
@@ -118,35 +140,42 @@
                         background-color: @main-color;
                     }
                 }
-                .inner-bottom{
+
+                .inner-bottom {
                     padding-bottom: 12px;
-                    .title{
+
+                    .title {
                         padding-top: 13px;
                         font-size: 14px;
                         line-height: 26px;
                         font-weight: 400;
                     }
-                    .vote{
+
+                    .vote {
                         color: #f8ba04;
-                        i{
+
+                        i {
                             font-size: 12px;
                         }
                     }
-                    .cost{
+
+                    .cost {
                         padding-top: 7px;
-                        display:flex;
+                        display: flex;
                         font-family: 'Open-Sans';
-                        &-root{
-                            color:#9999;
+
+                        &-root {
+                            color: #9999;
                             text-decoration: line-through;
                         }
-                        &-new{
+
+                        &-new {
                             color: @btn-color;
                             padding-left: 4px;
+                        }
                     }
                 }
             }
         }
     }
-}
 }

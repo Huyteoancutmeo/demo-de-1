@@ -173,6 +173,7 @@
 .slider .title {
   text-align: center;
   padding-top: 2px;
+  font-family: "Montserrat-Bold";
 }
 .slider .title .mr {
   margin-left: 48.8%;
@@ -235,6 +236,9 @@
 .slider-content .slider-items .slider-item-bottom .describe a {
   font-weight: 400;
   line-height: 20px;
+}
+.slider-content .slider-items .slider-item-bottom .describe a:hover {
+  color: #8262b5;
 }
 .slider-content .slider-items .slider-item-bottom .describe p {
   font-family: 'Open-sans';
@@ -347,59 +351,57 @@ button {
 .header-inner .web-info-button i {
   margin-right: 6px;
 }
-.menu-bar {
-  height: 80px;
-  border-bottom: 1px solid #dddddd;
-  align-items: center;
+.menu-bar navbar {
+  padding: 20px 30px;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 29px;
   box-sizing: border-box;
-}
-.menu-bar-inner {
+  flex-wrap: wrap;
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
-.menu-bar-inner-left {
+.menu-bar navbar .logo {
+  width: 15%;
+}
+.menu-bar navbar .logo a {
   display: flex;
 }
-.menu-bar-inner-left .logo {
-  padding-top: 20px;
+.menu-bar navbar .logo a img {
+  width: 200px;
 }
-.menu-bar-inner-left .inner-center {
-  padding-left: 313px;
+.menu-bar navbar .navbar-center {
   display: flex;
-}
-.menu-bar-inner-left .inner-center nav .navbar .nav-item {
-  margin-right: 50px;
-  padding-top: 28px;
-  display: inline-block;
-}
-.menu-bar-inner-left .inner-center nav .navbar a {
-  font-family: 'Montserrat-Bold';
+  justify-content: center;
+  width: 70%;
+  font-family: 'Montserrat';
+  font-weight: 700;
   text-transform: uppercase;
   font-size: 14px;
 }
-.menu-bar-inner-left .inner-center nav .navbar a:hover {
-  text-decoration: none;
-  color: #8262b5;
-}
-.menu-bar-inner-left .inner-center .search-button {
-  padding-top: 28px;
-}
-.menu-bar-inner-left .inner-center .search-button button {
-  background-color: #fff;
-  font-size: 14px;
-}
-.menu-bar-inner-right {
+.menu-bar navbar .navbar-center nav .navbar-menu {
   display: flex;
-  padding-top: 25px;
 }
-.menu-bar-inner-right .menu {
-  display: none;
+.menu-bar navbar .navbar-center nav .navbar-menu li {
+  list-style: none;
+  margin-right: 55px;
 }
-.menu-bar-inner-right .search {
-  display: none;
+.menu-bar navbar .navbar-center nav .navbar-menu li a {
+  text-decoration: none;
 }
-.menu-bar-inner-right .control-item {
-  padding-left: 22px;
+.menu-bar navbar .navbar-right {
+  display: flex;
+  width: 15%;
+  justify-content: flex-end;
+}
+.menu-bar navbar .navbar-right .right-item i {
+  font-size: 30px;
+  padding-left: 28px;
+  color: #000;
+}
+.menu-bar navbar .navbar-right .right-item button {
+  border: none;
+  background: none;
 }
 .footer {
   background-color: #222222;
@@ -472,7 +474,6 @@ button {
 }
 .footer-top .right .contact {
   padding-top: 5px;
-  width: 233px;
   line-height: 33px;
 }
 .footer-top .right .contact i {
@@ -500,15 +501,17 @@ button {
   font-size: 20px;
   padding-left: 5px;
 }
-@media all and (max-width: 1170px) {
-  .menu-bar-inner-left .inner-center {
+@media all and (min-width: 1170px) {
+  .navbar-right .menu-toggle {
     display: none;
   }
-  .menu-bar-inner-right .menu {
-    display: flex;
+  .navbar-right .search-btn {
+    display: none;
   }
-  .menu-bar-inner-right .search {
-    display: flex;
+}
+@media all and (max-width: 1170px) {
+  .menu-bar navbar .navbar-center {
+    display: none;
   }
   .slider .title .mr {
     margin-left: 47.9%;
