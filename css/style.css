@@ -9,7 +9,8 @@
 }
 @font-face {
   font-family: 'Open-Sans';
-  src: url('../fonts/Open_Sans/OpenSans-Regular.woff2');
+  src: url('../fonts/Open_Sans/OpenSans-Regular.eot');
+  src: url('../fonts/Open_Sans/OpenSans-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/Open_Sans/OpenSans-Regular.woff2') format('woff2'), url('../fonts/Open_Sans/OpenSans-Regular.woff') format('woff'), url('../fonts/Open_Sans/OpenSans-Regular.svg') format('svg'), url('../fonts/Open_Sans/OpenSans-Regular.ttf') format('truetype');
 }
 @font-face {
   font-family: 'Pacifico';
@@ -388,6 +389,10 @@ button {
 }
 .menu-bar navbar .navbar-center nav .navbar-menu li a {
   text-decoration: none;
+}
+.menu-bar navbar .navbar-center nav .navbar-menu li button {
+  border: none;
+  background: none;
 }
 .menu-bar navbar .navbar-right {
   display: flex;
