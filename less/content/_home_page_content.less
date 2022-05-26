@@ -1,19 +1,19 @@
 .banner {
-    span {
-        color: @bg-color;
-    }
 
     .title {
         color: #7a7a7a;
     }
 
-    button {
-        height: 40px;
-        width: 108px;
+    .shop-now {
+        padding: 13px 17px;
+        display: inline-block;
+        color: #fff;
+        box-sizing: border-box;
+        background-color: #8262b5;
+        font-size: 14px;
+        line-height: 14px;
         text-align: center;
-        background-color: @btn-color;
-        color: @main-color;
-        font-weight: 400;
+        margin-left: 3px;
     }
 
     &-left {
@@ -30,39 +30,45 @@
         .banner-info {
             position: absolute;
             right: 14%;
-            bottom: 28%;
+            bottom: 28.6%;
+            text-align: right;
 
             .title {
                 font-family: 'Pacifico';
                 font-weight: 400;
                 font-size: 30px;
                 color: @font-color;
+                margin-bottom: 5px;
             }
 
             .button {
                 padding-left: 212px;
-                padding-top: 8px;
+                padding-top: 4px;
             }
         }
     }
 
     &-right {
         .col(33.3333%);
-        text-transform: uppercase;
 
         .title {
             font-size: 16px;
             letter-spacing: 3px;
+            text-transform: uppercase;
         }
 
-        span {
+        .description {
+            font-family: 'Montserrat-Bold';
             font-size: 20px;
+            text-transform: uppercase;
+            color: #000;
+            font-weight: 700;
+            margin-bottom: 15px;
         }
 
         &-content {
             .banner-right-item {
                 position: relative;
-                cursor: pointer;
                 padding: 15px 0;
             }
         }
@@ -80,6 +86,7 @@
             display: block;
             top: 38%;
             left: 38px;
+
         }
     }
 }
@@ -129,15 +136,20 @@
                 .inner-top {
                     position: relative;
 
-                    button {
+                    .btn-cart {
                         position: absolute;
-                        text-transform: uppercase;
-                        bottom: 5px;
-                        font-size: 12px;
                         left: 5px;
-                        height: 40px;
-                        width: 118px;
-                        background-color: @main-color;
+                        bottom: 5px;
+
+                        a {
+                            color: #424242;
+                            font-size: 12px;
+                            font-weight: 400;
+                            padding: 14px 18px 12px;
+                            background: #fff;
+                            text-transform: uppercase;
+                            display: block;
+                        }
                     }
                 }
 
