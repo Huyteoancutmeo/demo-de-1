@@ -377,7 +377,7 @@ ul li {
   justify-content: space-between;
 }
 .menu-bar navbar .logo {
-  width: 15%;
+  width: 14.9%;
 }
 .menu-bar navbar .logo a {
   display: flex;
@@ -389,10 +389,11 @@ ul li {
   display: flex;
   justify-content: center;
   width: 70%;
-  font-family: 'Montserrat-Bold';
   font-weight: 700;
   text-transform: uppercase;
   font-size: 14px;
+  font-family: 'Montserrat-Bold';
+  color: #000;
 }
 .menu-bar navbar .navbar-center nav .navbar-menu {
   display: flex;
@@ -402,7 +403,7 @@ ul li {
 }
 .menu-bar navbar .navbar-center nav .navbar-menu li {
   list-style: none;
-  margin-right: 55px;
+  padding: 0 27px 0 28px;
 }
 .menu-bar navbar .navbar-center nav .navbar-menu li a {
   text-decoration: none;
@@ -420,7 +421,7 @@ ul li {
 }
 .menu-bar navbar .navbar-right {
   display: flex;
-  width: 15%;
+  width: 15.1%;
   justify-content: flex-end;
 }
 .menu-bar navbar .navbar-right .right-item i {
