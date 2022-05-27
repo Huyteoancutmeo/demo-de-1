@@ -92,14 +92,14 @@
 }
 .banner-right .content-bottom {
   display: block;
-  top: 38%;
+  top: 37.2%;
   left: 38px;
 }
 .list-header {
   font-family: 'Montserrat-Bold';
   text-transform: uppercase;
-  padding-top: 45px;
-  height: 115px;
+  padding-top: 46px;
+  height: 112px;
 }
 .list-header .title {
   color: #8262b5;
@@ -152,7 +152,7 @@
   padding-bottom: 12px;
 }
 .list-bottom .list-item-inner .inner-bottom .title {
-  padding-top: 13px;
+  padding-top: 14px;
   font-size: 14px;
   line-height: 26px;
   font-weight: 400;
@@ -178,8 +178,8 @@
 }
 .slider {
   background-image: url(../img/bg-silder.jpg);
-  padding: 78px 0 97px 0;
-  margin-top: 47px;
+  padding: 78px 0 96px 0;
+  margin-top: 46px;
 }
 .slider .title {
   text-align: center;
@@ -261,6 +261,9 @@
   padding: 19px 0 0 19px;
   height: 38px;
 }
+.slider-content .slider-items .slider-item-bottom .feedback i:hover {
+  cursor: pointer;
+}
 .slider-content .slider-items .slider-item-bottom .feedback .comment {
   padding-right: 32px;
   font-size: 14px;
@@ -322,12 +325,6 @@ ul {
 }
 ul li {
   list-style: none;
-}
-button {
-  text-align: center;
-  cursor: pointer;
-  border: none;
-  font-size: 16px;
 }
 .container {
   max-width: 1170px;
@@ -400,9 +397,12 @@ button {
 .menu-bar navbar .navbar-center nav .navbar-menu {
   display: flex;
 }
+.menu-bar navbar .navbar-center nav .navbar-menu .navigation {
+  display: none;
+}
 .menu-bar navbar .navbar-center nav .navbar-menu li {
   list-style: none;
-  margin-right: 54px;
+  margin-right: 55px;
 }
 .menu-bar navbar .navbar-center nav .navbar-menu li a {
   text-decoration: none;
@@ -413,7 +413,7 @@ button {
 .menu-bar navbar .navbar-center nav .navbar-menu li button {
   border: none;
   background: none;
-  font-size: 13px;
+  cursor: pointer;
 }
 .menu-bar navbar .navbar-center nav .navbar-menu li:last-child {
   margin-right: 0;
@@ -431,6 +431,7 @@ button {
 .menu-bar navbar .navbar-right .right-item button {
   border: none;
   background: none;
+  cursor: pointer;
 }
 .footer {
   background-color: #222222;
