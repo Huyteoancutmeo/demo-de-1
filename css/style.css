@@ -17,7 +17,7 @@
   src: url('../fonts/Pacifico/Pacifico-Regular.ttf');
 }
 .banner .title {
-  color: #7a7a7a;
+  color: #616161;
 }
 .banner .shop-now {
   padding: 13px 17px;
@@ -148,8 +148,14 @@
   text-transform: uppercase;
   display: block;
 }
+.list-bottom .list-item-inner .inner-top .btn-cart a:hover {
+  color: #8262b5;
+}
 .list-bottom .list-item-inner .inner-bottom {
   padding-bottom: 12px;
+}
+.list-bottom .list-item-inner .inner-bottom :hover {
+  cursor: pointer;
 }
 .list-bottom .list-item-inner .inner-bottom .title {
   padding-top: 14px;
@@ -183,7 +189,6 @@
 }
 .slider .title {
   text-align: center;
-  padding-top: 2px;
   font-family: "Montserrat-Bold";
 }
 .slider .title .mr {
@@ -241,7 +246,7 @@
   background-color: #fff;
 }
 .slider-content .slider-items .slider-item-bottom .describe {
-  padding: 17px 18px 0 18px;
+  padding: 17px 18px 3px 18px;
   border-bottom: 1px solid #ededed;
 }
 .slider-content .slider-items .slider-item-bottom .describe a {
@@ -255,11 +260,14 @@
 .slider-content .slider-items .slider-item-bottom .describe p {
   font-family: 'Open-sans';
   color: #424242;
+  font-size: 14px;
+  line-height: 22px;
 }
 .slider-content .slider-items .slider-item-bottom .feedback {
   display: flex;
   padding: 19px 0 0 19px;
   height: 38px;
+  color: #c0c0c0;
 }
 .slider-content .slider-items .slider-item-bottom .feedback i:hover {
   cursor: pointer;
@@ -393,7 +401,6 @@ ul li {
   text-transform: uppercase;
   font-size: 14px;
   font-family: 'Montserrat-Bold';
-  color: #000;
 }
 .menu-bar navbar .navbar-center nav .navbar-menu {
   display: flex;
@@ -407,6 +414,7 @@ ul li {
 }
 .menu-bar navbar .navbar-center nav .navbar-menu li a {
   text-decoration: none;
+  color: #000;
 }
 .menu-bar navbar .navbar-center nav .navbar-menu li a:hover {
   color: #8262b5;
@@ -503,6 +511,9 @@ ul li {
 }
 .footer-top .right {
   width: calc(100% / 12 * 3);
+}
+.footer-top .right :hover {
+  cursor: pointer;
 }
 .footer-top .right .contact {
   padding-top: 5px;
