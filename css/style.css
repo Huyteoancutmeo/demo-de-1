@@ -142,7 +142,7 @@
   color: #424242;
   font-size: 12px;
   font-weight: 400;
-  padding: 14px 18px 12px;
+  padding: 13px 16px 12px 18px;
   background: #fff;
   text-transform: uppercase;
   display: block;
@@ -263,7 +263,7 @@
   line-height: 22px;
 }
 .slider-content .slider-items .slider-item-bottom .describe p:hover {
-  cursor: pointer;
+  cursor: auto;
 }
 .slider-content .slider-items .slider-item-bottom .feedback {
   display: flex;
@@ -436,7 +436,8 @@ ul li {
 }
 .menu-bar navbar .navbar-right .right-item i {
   font-size: 30px;
-  padding-left: 28px;
+  padding-left: 25px;
+  padding-top: 2px;
   color: #000;
 }
 .menu-bar navbar .navbar-right .right-item button {
@@ -460,7 +461,15 @@ ul li {
   padding-bottom: 34px;
   font-size: 14px;
 }
-.footer-top .title {
+.footer-top a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+.footer-top .footer-items {
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+.footer-top .footer-items .title {
   border-bottom: 1px solid #828282;
   color: #f7f7f7;
   height: 47px;
@@ -469,13 +478,8 @@ ul li {
   font-weight: 400;
   font-size: 16px;
 }
-.footer-top a:hover {
-  color: #fff;
-  text-decoration: underline;
-}
-.footer-top .footer-items {
-  padding: 0 15px;
-  box-sizing: border-box;
+.footer-top .footer-items .title:hover {
+  cursor: auto;
 }
 .footer-top .left {
   width: calc(100% / 12 * 3);
@@ -510,9 +514,6 @@ ul li {
 }
 .footer-top .right {
   width: calc(100% / 12 * 3);
-}
-.footer-top .right :hover {
-  cursor: pointer;
 }
 .footer-top .right .contact {
   padding-top: 5px;
