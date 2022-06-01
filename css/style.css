@@ -263,7 +263,7 @@
   line-height: 22px;
 }
 .slider-content .slider-items .slider-item-bottom .describe p:hover {
-  cursor: auto;
+  cursor: text;
 }
 .slider-content .slider-items .slider-item-bottom .feedback {
   display: flex;
