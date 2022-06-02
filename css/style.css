@@ -311,9 +311,11 @@
 }
 #toggle-menu {
   position: fixed;
-  background-color: #fff;
-  width: 30%;
-  visibility: hidden;
+  top: -120px;
+  right: 0;
+  bottom: -120px;
+  left: 0;
+  transform: scaleX(0);
   z-index: 100;
 }
 #toggle-menu a {
@@ -321,9 +323,29 @@
   margin-bottom: 20px;
   letter-spacing: 0.3px;
 }
+#toggle-menu .menu {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 30%;
+  background-color: #fff;
+}
 #toggle-menu .menu nav ul li {
   border-bottom: 1px solid #828282;
   height: 70px;
+}
+#toggle-menu .scrim {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.5);
+}
+#toggle-menu.visible {
+  transform: scaleX(1);
 }
 body {
   padding: 0;

@@ -1,12 +1,7 @@
-var display = true;
+document.querySelector('.menu-toggle').onclick = () => {
+    document.querySelector('#toggle-menu').classList.toggle('visible');
+}
 
-function showMenu() {
-    if (display) {
-        document.getElementById("toggle-menu").style.visibility = "visible";
-        display = false;
-    }
-    else {
-        document.getElementById("toggle-menu").style.visibility = "hidden";
-        display = true;
-    }
+document.querySelector('.scrim').onclick = () => {
+    document.querySelector('#toggle-menu').classList.remove('visible');
 }
