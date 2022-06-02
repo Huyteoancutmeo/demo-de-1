@@ -19,6 +19,21 @@
 </head>
 
 <body>
+    <div id="toggle-menu">
+        <div class="menu">
+            <nav>
+                <ul class="navbar-menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Women</a></li>
+                    <li><a href="#">Men</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Collections</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
     <div class="wrapper">
         <!--Header-->
         <div class="header">
@@ -64,7 +79,7 @@
                     </nav>
                 </div>
                 <div class="navbar-right">
-                    <div class="right-item menu-toggle ">
+                    <div class="right-item menu-toggle " onclick="showMenu()">
                         <i class="pe-7s-menu"></i>
                     </div>
                     <div class="right-item search-btn">
@@ -501,23 +516,17 @@
                         <div class="footer-items right">
                             <div class="title">Shop Location</div>
                             <div class="contact">
-                                <div class="address" style="display: flex;">
-                                    <i class="fa-regular fa-map"></i>
-                                    <div class="description">
-                                        <a href="#">500 Hennessy Road, Causeway Bay, HongKong</a>
-                                    </div>
+                                <div class="address">
+                                    <a href="#" style="display:flex">
+                                        <div><i class="fa-regular fa-map"></i></div>
+                                        <div>500 Hennessy Road, Causeway Bay, HongKong</div>
+                                    </a>
                                 </div>
-                                <div class="phone" style="display: flex;">
-                                    <i class="fa-solid fa-phone"></i>
-                                    <div class="description">
-                                        <a href="#">+1 23456789</a>
-                                    </div>
+                                <div class="phone">
+                                    <a href="#"><i class="fa-solid fa-phone"></i><span>+1 23456789</span></a>
                                 </div>
-                                <div class="email" style="display: flex;">
-                                    <i class="fa-regular fa-envelope"></i>
-                                    <div class="description">
-                                        <a href="#">contact@gmail.com</a>
-                                    </div>
+                                <div class="email">
+                                    <a href="#"><i class="fa-regular fa-envelope"></i><span>contact@gmail.com</span></a>
                                 </div>
                             </div>
                         </div>
@@ -579,10 +588,18 @@
                         slidesToShow: 2,
                         slidesToScroll: 1,
                     }
+                },
+                {
+                    breakpoint: 420,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                    }
                 }
             ]
         });
     </script>
+    <script src="js/style.js"></script>
 </body>
 
 </html>

@@ -246,4 +246,63 @@
     }
 }
 
-@media all and (max-width: 420px) {}
+@media all and (max-width: 420px) {
+    .header {
+        .title {
+            font-size:10px;
+        }
+        &-inner {
+            .web-info-button {
+                margin-left: 15px;
+            }
+        }
+    }
+    .menu-bar {
+        navbar {
+            .navbar-right {
+                .right-item {
+                    i {
+                        padding-left: 8px;
+                    }
+                }
+            }
+        }
+    }
+    .footer {
+        &-top {
+            .left {
+                margin-bottom: 50px;
+
+                .contact {
+                    padding-top: 20px;
+                }
+            }
+
+            .center {
+                width: 100%;
+                padding: 0 15px;
+
+                .title {
+                    width: 390px;
+                }
+
+                .nav-item {
+                    &-right {
+                        padding-left: 120px;
+                    }
+                }
+            }
+
+            .right {
+                width: 100%;
+                padding-top: 50px;
+            }
+        }
+
+        &-bottom {
+            &-inner {
+                font-size: 8px;
+            }
+        }
+    }
+}

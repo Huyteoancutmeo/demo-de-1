@@ -15,10 +15,6 @@
         padding-bottom: 34px;
         font-size: 14px;
 
-        a:hover {
-            color: @main-color;
-            text-decoration: underline;
-        }
         .footer-items {
             padding: 0 15px;
             box-sizing: border-box;
@@ -68,6 +64,10 @@
 
                 .pb-11 {
                     padding-bottom: 11px;
+                    a:hover {
+                        color: @main-color;
+                        text-decoration: underline;
+                    }
                 }
 
                 &-right {
@@ -81,20 +81,24 @@
             .contact {
                 padding-top: 19px;
                 line-height: 33px;
-
                 i {
                     padding-right: 14px;
                     padding-top: 10px;
                 }
                 i:hover {
                     color: @main-color;
+                    text-decoration: none;
+                }
+                a:hover {
+                    color: @main-color;
+                    text-decoration: underline;
                 }
             }
         }
     }
 
     &-bottom {
-        height: 70px;
+        min-height: 70px;
 
         &-inner {
             display: flex;
