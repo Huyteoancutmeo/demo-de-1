@@ -317,7 +317,6 @@
   left: 0;
   z-index: 100;
   visibility: hidden;
-  transform: translateX(-100%, 0, 0);
 }
 #toggle-menu .menu {
   position: absolute;
@@ -325,6 +324,8 @@
   bottom: 0;
   left: 0;
   width: 240px;
+  transform: translateX(-100%);
+  transition-duration: 1000ms;
   background-color: #fff;
 }
 #toggle-menu .menu nav ul li {
@@ -333,7 +334,6 @@
 }
 #toggle-menu .menu nav ul li a {
   color: #888888;
-  margin-bottom: 20px;
   letter-spacing: 0.3px;
 }
 #toggle-menu .scrim {
@@ -342,11 +342,16 @@
   right: 0;
   bottom: 0;
   left: 0;
+  transform: translateX(0);
   background: rgba(0, 0, 0, 0.5);
 }
-#toggle-menu.visible {
+#toggle-menu.visible .menu {
   visibility: visible;
-  transform: translateX(0, 0, 0);
+  transform: translateX(0);
+  transition-duration: 1000ms;
+}
+#toggle-menu.visible .scrim {
+  visibility: visible;
 }
 body {
   padding: 0;

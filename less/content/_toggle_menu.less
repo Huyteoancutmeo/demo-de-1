@@ -6,7 +6,6 @@
     left: 0;
     z-index:100;
     visibility: hidden;
-    transform: translateX(-100%, 0, 0);
 
     .menu {
         position: absolute;
@@ -14,6 +13,8 @@
         bottom: 0;
         left: 0;
         width: 240px;
+        transform: translateX(-100%);
+        transition-duration: 1000ms;
         background-color: @main-color;
         nav {
             ul {
@@ -22,7 +23,6 @@
                     padding: 20px 30px 20px 30px;
                     a {
                         color: #888888;
-                        margin-bottom: 20px;
                         letter-spacing: 0.3px;
                     }
                 }
@@ -35,11 +35,18 @@
         right: 0;
         bottom: 0;
         left: 0;
+        transform: translateX(0);
         background: rgba(0, 0, 0, 0.5);
     }
 }
 
 #toggle-menu.visible {
-    visibility: visible;
-    transform: translateX(0, 0, 0);
+    .menu {
+        visibility: visible;
+        transform: translateX(0);
+        transition-duration: 1000ms;
+    }
+    .scrim {
+        visibility: visible;
+    }
 }
