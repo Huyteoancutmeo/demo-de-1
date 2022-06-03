@@ -88,6 +88,7 @@
 
 @media all and (max-width: 768px) {
     .banner {
+        margin-bottom: 40px;
         &-left {
             .col(100%);
         }
@@ -105,9 +106,16 @@
                     padding: 0 15px;
 
                     &-inner {
+                        position:relative;
                         overflow: hidden;
-                        height: 196.66px;
-
+                        padding-top: calc(5 / 9 * 100%);
+                        img {
+                            left:0;
+                            top: 0;
+                            right: 0;
+                            bottom: 0;
+                            position: absolute;
+                        }
                         .title {
                             font-size: 14px;
                         }
@@ -115,11 +123,6 @@
                         span {
                             font-size: 16px;
                         }
-
-                        .content-bottom {
-                            top: 20%;
-                        }
-
                     }
                 }
             }
@@ -169,7 +172,6 @@
     .header {
         &-inner {
             font-size: 12px;
-
             .web-info {
                 .title {
                     display: none;
@@ -191,10 +193,13 @@
 
         &-right {
             &-content {
+                display:block;
+                overflow:hidden;
+                margin: 0;
                 .banner-right-item {
-                    &-inner {
-                        height: 143.33px;
-                    }
+                    margin-bottom: 30px;
+                    width: 100%;
+                    padding: 0;
                 }
             }
         }
@@ -286,7 +291,7 @@
                 padding: 0 15px;
 
                 .title {
-                    width: 390px;
+                    width: 100%;
                 }
 
                 .nav-item {

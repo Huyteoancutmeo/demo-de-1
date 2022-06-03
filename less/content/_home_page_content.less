@@ -74,18 +74,19 @@
 
         .banner-content {
             position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
         }
 
         .content-top {
-            top: 43%;
             left: 57px;
+            padding-top: 27px;
         }
 
         .content-bottom {
             display: block;
-            top: 37.2%;
             left: 38px;
-
+            padding-top: 7px;
         }
     }
 }
@@ -134,7 +135,15 @@
             &-inner {
                 .inner-top {
                     position: relative;
-
+                    padding-top: calc(323 / 262 * 100%);
+                    
+                    img {
+                        position: absolute;
+                        left:0;
+                        top: 0;
+                        right: 0;
+                        bottom: 0;
+                    }
                     .btn-cart {
                         position: absolute;
                         left: 5px;

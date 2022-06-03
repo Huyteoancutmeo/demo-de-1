@@ -84,15 +84,17 @@
 }
 .banner-right .banner-content {
   position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
 .banner-right .content-top {
-  top: 43%;
   left: 57px;
+  padding-top: 27px;
 }
 .banner-right .content-bottom {
   display: block;
-  top: 37.2%;
   left: 38px;
+  padding-top: 7px;
 }
 .list-header {
   font-family: 'Montserrat-Bold';
@@ -132,6 +134,14 @@
 }
 .list-bottom .list-item-inner .inner-top {
   position: relative;
+  padding-top: calc(323 / 262 * 100%);
+}
+.list-bottom .list-item-inner .inner-top img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
 }
 .list-bottom .list-item-inner .inner-top .btn-cart {
   position: absolute;
@@ -639,6 +649,9 @@ ul li {
   }
 }
 @media all and (max-width: 768px) {
+  .banner {
+    margin-bottom: 40px;
+  }
   .banner-left {
     width: 100%;
     padding: 0 15px;
@@ -658,17 +671,22 @@ ul li {
     padding: 0 15px;
   }
   .banner-right-content .banner-right-item-inner {
+    position: relative;
     overflow: hidden;
-    height: 196.66px;
+    padding-top: calc(5 / 9 * 100%);
+  }
+  .banner-right-content .banner-right-item-inner img {
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
   }
   .banner-right-content .banner-right-item-inner .title {
     font-size: 14px;
   }
   .banner-right-content .banner-right-item-inner span {
     font-size: 16px;
-  }
-  .banner-right-content .banner-right-item-inner .content-bottom {
-    top: 20%;
   }
   .list-bottom .list-item {
     width: 50%;
@@ -704,8 +722,15 @@ ul li {
   .banner-left .banner-inner .banner-info .button {
     padding-left: 100px;
   }
-  .banner-right-content .banner-right-item-inner {
-    height: 143.33px;
+  .banner-right-content {
+    display: block;
+    overflow: hidden;
+    margin: 0;
+  }
+  .banner-right-content .banner-right-item {
+    margin-bottom: 30px;
+    width: 100%;
+    padding: 0;
   }
   .slider .title .mr {
     margin-left: 45.5%;
@@ -754,7 +779,7 @@ ul li {
     padding: 0 15px;
   }
   .footer-top .center .title {
-    width: 390px;
+    width: 100%;
   }
   .footer-top .center .nav-item-right {
     padding-left: 120px;
